@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class UpiPayment implements PaymentType {
     public void processPayment (double amount) {
      System.out.println("Processing Payment via UPI " + amount);
@@ -8,6 +10,14 @@ public class UpiPayment implements PaymentType {
             System.out.println("✅ UPI ID is valid.");
         } else {
             System.out.println("❌ Invalid UPI ID format.");
+        }
+    }
+    public void checkUPIApp(String str){
+        if("PhonePey".equals(str)){// check if the string str which is passed as argument is matched
+            // with "PhonePey" or not
+            System.out.println("Only PhonePey is accepted as UPI payment app");
+        }else {
+            System.out.println("Other UPI payment apps are not allowed ");
         }
     }
 }
