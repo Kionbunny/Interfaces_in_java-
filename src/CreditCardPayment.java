@@ -16,6 +16,10 @@ class CreditCardPayment implements PaymentType{
     public void processPayment(double amount) {
         System.out.println("Processing credit card payment " + amount);
     }
+    // it has the new method specific to credit card
+    public void CreditCardLimit(){
+        System.out.println("checking credit card limit .. ");
+    }
 }
 // what happens if we write the method without public
 //If you try to implement an interface method with a lower access modifier (e.g., protected or default),

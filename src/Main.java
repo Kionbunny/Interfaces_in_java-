@@ -8,6 +8,7 @@ public class Main {
 
         UpiPayment obj2 = new UpiPayment();
         obj2.processPayment(2500.150);
+        obj2.validateUpiId("User99@YBL");  // ✅ Now it matches the regex!
         // use the above the calling methods via object
         // if you know which payment method you use beforehand (already know which payment type we use)
         // if not then use all of them dynamically by creating a reference to the interface
